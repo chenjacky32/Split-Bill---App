@@ -114,6 +114,7 @@ form {
   display: grid;
   align-items: center;
   gap: 1.2rem;
+  width: fit-content;
 
   background-color: var(--color-lightest);
   border-radius: 7px;
@@ -127,6 +128,7 @@ form {
 .form-split-bill {
   grid-template-columns: 1fr 12rem;
   padding: 3.2rem 4rem;
+  margin-left: 5rem;
 }
 
 label {
