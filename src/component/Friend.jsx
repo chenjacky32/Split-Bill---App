@@ -1,4 +1,4 @@
-function Friend({ friend }) {
+function Friend({ friend, onSelected }) {
   return (
     <li>
       <img src={friend.image} alt={friend.name} />
@@ -14,7 +14,9 @@ function Friend({ friend }) {
         </p>
       )}
       {friend.balance === 0 && <p>kamu dan {friend.name} tidak ada hutang</p>}
-      <button className="button">Pilih</button>
+      <button className="button" onClick={() => onSelected(friend)}>
+        Pilih
+      </button>
     </li>
   );
 }
